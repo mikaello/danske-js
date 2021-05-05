@@ -1,0 +1,5 @@
+{
+    "watch": ["src"],
+    "exec": "npx tsc -p . && node .",
+    "ext": "ts"
+ }
