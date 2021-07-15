@@ -1,10 +1,12 @@
-import worker from "pdfjs-dist/es5/build/pdf.js";
+import pdfjs from "pdfjs-dist/es5/build/pdf.js";
+// @ts-ignore
+//import pdfjsWorker from "pdfjs-dist/es5/build/pdf.worker.entry.js";
+//pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 import fs from "fs";
 const run = async () => {
-    const pdf = fs.readFileSync("konto.pdf");
     let w;
-    // w = await worker.getDocument(pdf);
-    w = await worker.getDocument({ url: "konto.pdf" }).promise;
+    w = await pdfjs.getDocument(fs.readFileSync("konto.pdf")).promise;
+    //w = await pdfjs.getDocument({ url: "konto.pdf" }).promise;
     for (let pageNum = 0; pageNum < w.numPages; pageNum++) {
         let page = null;
         try {

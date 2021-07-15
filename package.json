@@ -10,10 +10,13 @@
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
+    "@types/pdfjs-dist": "^2.7.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   },
   "scripts": {
+    "ts": "tsc -p . && node .",
+    "es": "esbuild src/index.ts --outfile=src/index.js && node .",
     "build": "esbuild src/index.ts --bundle --outfile=index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
