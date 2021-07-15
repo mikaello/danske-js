@@ -7,7 +7,7 @@ import fs from "fs";
 
 const run = async () => {
   let w;
-  w = await pdfjs.getDocument(fs.readFileSync("konto.pdf")).promise;
+  w = await pdfjs.getDocument(fs.readFileSync("transactions.pdf")).promise;
   //w = await pdfjs.getDocument({ url: "konto.pdf" }).promise;
 
   for (let pageNum = 0; pageNum < w.numPages; pageNum++) {
