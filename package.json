@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "esbuild": "^0.11.18",
-    "pdfjs-dist": "^2.7.570"
+    "pdfjs-dist": "^4.2.67"
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
