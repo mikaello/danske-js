@@ -1,5 +1,7 @@
 # danske-js
 
+> **Archived:** This project is no longer maintained and is kept for reference only.
+
 Parsing of PDF documents with account/transaction information from Danske Bank.
 
 These kind of PDF documents are the ones you will get if you ask for
